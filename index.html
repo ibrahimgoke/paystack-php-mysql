@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Paystack PHP MYSQL</title>
+</head>
+<body>
+
+<h1>Payment Form</h1>
+<form method="POST" action="confirm_payment.php">
+	Name: <input required type="text" name="name"> <br><br>
+	Phone Number: <input required type="tel" name="phone"> <br><br>
+	Email: <input type="email" required name="email"><br><br>
+	Amount: <br> <input type="radio" name="amount" value="20000"> 20,000<br><br>
+			<input type="radio" name="amount" value="30000"> 30,000<br><br>
+			<input type="radio" name="amount" value="50000"> 50,000<br><br>
+	
+	<input type="submit" name="submit">
+</form>
+</body>
+</html>
