@@ -1,6 +1,8 @@
 <?php
+// Include Database Configuration
 include ("config.php");
 
+// Get Payment Reference and other variables from confirm_payment.php page
 $reference = $_GET['reference'];
 $payer_email = $_GET['email'];
 $date = date("m/d/y G.i:s", time());
@@ -28,6 +30,7 @@ if ($request) {
 
 if (array_key_exists('data', $result) && array_key_exists('status', $result['data']) && ($result['data']['status'] === 'success')) {
        
+       // Update the database after successful payment
     $update_payment_status="UPDATE payment SET status='Paid' where email='$payer_email'";
    if(mysqli_query($conn, $update_payment_status)) {
    	echo "<script type=\"text/javascript\">

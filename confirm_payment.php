@@ -1,10 +1,9 @@
  <?php
-                  if (isset($_POST['submit'])) {
-
-                $name = $_POST['name'];
-                $email =$_POST['email'];
-                $amount = $_POST['amount'];
-              }
+  if (isset($_POST['submit'])) {
+  $name = $_POST['name'];
+  $email =$_POST['email'];
+  $amount = $_POST['amount'];
+}
                            
 ?>
 <!DOCTYPE html>
