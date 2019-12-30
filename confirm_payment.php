@@ -29,7 +29,7 @@
       var name = "<?php echo $name; ?>";
         
     var handler = PaystackPop.setup({
-      key: 'pk_test_7028a54c6ecba38c6a332dd688a3b3568994e311',
+      key: 'pk_test_xxxxxxxxxx',
       email: email,
       display_name: name,
       amount: amount,
